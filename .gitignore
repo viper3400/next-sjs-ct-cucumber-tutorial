@@ -34,3 +34,10 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# serenity-js
+/target/site
+
+# playwright
+/playwright-report
+/playwright/.cache
