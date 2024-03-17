@@ -11,32 +11,37 @@
     "serenity-bdd:update": "serenity-bdd update",
     "test:ct": "failsafe clean serenity-bdd:update test:execute test:report",
     "test:execute": "playwright test -c playwright-ct.config.ts",
-    "test:report": "serenity-bdd run --features ./src/components"
+    "test:report": "serenity-bdd run --features ./features",
+    "test:cucumber:execute": "cucumber-js",
+    "test:cucumber": "failsafe clean serenity-bdd:update test:cucumber:execute test:report"
   },
   "dependencies": {
-    "next": "14.1.0",
-    "react": "^18",
-    "react-dom": "^18"
+    "next": "14.1.3",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   },
   "devDependencies": {
-    "@playwright/experimental-ct-react": "^1.41.2",
-    "@serenity-js/assertions": "^3.18.1",
-    "@serenity-js/console-reporter": "^3.18.1",
-    "@serenity-js/core": "^3.18.1",
-    "@serenity-js/playwright": "^3.18.1",
-    "@serenity-js/playwright-test": "^3.18.1",
-    "@serenity-js/serenity-bdd": "^3.18.1",
-    "@serenity-js/web": "^3.18.1",
-    "@types/node": "^20",
-    "@types/react": "^18",
-    "@types/react-dom": "^18",
-    "autoprefixer": "^10.0.1",
-    "eslint": "^8",
-    "eslint-config-next": "14.1.0",
+    "@cucumber/cucumber": "^10.3.1",
+    "@playwright/experimental-ct-react": "^1.42.1",
+    "@serenity-js/assertions": "^3.21.1",
+    "@serenity-js/console-reporter": "^3.21.1",
+    "@serenity-js/core": "^3.21.1",
+    "@serenity-js/cucumber": "^3.21.1",
+    "@serenity-js/playwright": "^3.21.1",
+    "@serenity-js/playwright-test": "^3.21.1",
+    "@serenity-js/serenity-bdd": "^3.21.1",
+    "@serenity-js/web": "^3.21.1",
+    "@types/node": "^20.11.28",
+    "@types/react": "^18.2.66",
+    "@types/react-dom": "^18.2.22",
+    "autoprefixer": "^10.4.18",
+    "eslint": "^8.57.0",
+    "eslint-config-next": "14.1.3",
     "npm-failsafe": "^1.2.0",
-    "postcss": "^8",
-    "tailwindcss": "^3.3.0",
-    "typescript": "^5"
+    "postcss": "^8.4.35",
+    "tailwindcss": "^3.4.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.2"
   },
   "volta": {
     "node": "20.11.1"

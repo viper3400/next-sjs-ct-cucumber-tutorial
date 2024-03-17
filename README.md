@@ -1,33 +1,33 @@
-## Integration of Component Testing into React/Next.js with Playwright and Serenity/JS
+# Next.js with Serenity/JS and Cucumber Tutorial
 
-### Overview
-This repository serves as a tutorial and demonstration of integrating component testing into a React/Next.js application using Playwright and Serenity/JS. Component testing is crucial for ensuring the reliability and functionality of individual UI components within a larger application.
+Welcome to the Next.js with Serenity/JS and Cucumber tutorial repository!
 
-### Features
-- **React/Next.js Setup**: Utilizes Next.js as the framework of choice for building the React application, following recommended guidelines.
-- **Counter Component**: Implements a simple counter component with increment and decrement functionality, constrained within a defined range.
-- **Playwright and Serenity/JS Integration**: Demonstrates the installation of necessary dependencies for testing, including Playwright and Serenity/JS, along with associated packages for assertions and reporting.
-- **Test Specifications**: Provides test specifications using Playwright and Serenity/JS to verify the functionality and behavior of the counter component.
-- **Serenity/JS Reporting**: Generates Serenity-BDD reports for clear visibility into test results and outcomes.
+In this tutorial, we demonstrate how to integrate Behavior-Driven Development (BDD) scenarios into a Next.js project using Serenity/JS and Cucumber. We build upon the concepts covered in the component testing tutorial using Serenity/JS and Playwright.
 
-### Getting Started
-1. **Setup**: Initialize a Next.js application following the provided guidelines.
-2. **Counter Component**: Implement the counter component within the React application.
-3. **Installation**: Install necessary dependencies for testing using npm.
-4. **Configuration**: Update package.json with scripts for cleaning, executing tests, and generating reports.
-5. **Playwright Configuration**: Configure Playwright settings and browser configurations for testing.
-6. **Test Specifications**: Define test specifications for the counter component using Playwright and Serenity/JS.
-7. **Run Tests**: Execute tests using `npm run test:ct` and find Serenity-BDD reports under `./target/site/serenity`.
+## Tutorial Overview
 
-### Usage
-1. Clone the repository.
-2. Install dependencies using npm.
-3. Follow the provided steps for setup and configuration.
-4. Run tests using `npm run test:ct`.
-5. View Serenity-BDD reports for test results and outcomes.
+- **Component Testing**: The tutorial begins with a demonstration of component testing using Serenity/JS and Playwright. We show how to test a simple component, which in this case, simulates a coffee counter for controlling coffee consumption.
 
-### Contribution
-Contributions are welcome! Feel free to open issues or pull requests for any improvements or additional features.
+- **Integrating BDD Scenarios**: Following the component testing, we dive into integrating BDD scenarios into the project. We utilize Serenity/JS BDD features and Cucumber to write user scenarios that run alongside component tests. This allows for comprehensive testing of both individual components and user interactions.
 
-### License
-This project is licensed under the [MIT License](LICENSE).
+## Getting Started
+
+To follow along with the tutorial, you can clone this repository and install the dependencies:
+
+```bash
+git clone https://github.com/viper3400/next-sjs-ct-cucumber-tutorial.git
+cd next-sjs-ct-cucumber-tutorial
+npm install
+```
+
+Ensure you have Node.js and npm installed on your machine.
+
+## Running the Tests
+
+To run the BDD tests, execute the following command:
+
+```bash
+npm run test:cucumber
+```
+
+This will execute the Cucumber tests and generate a BDD report in the `target/site` folder.
